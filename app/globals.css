@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+    :root {
+        --sakura: 340 67% 90%; /* Soft Sakura Pink */
+        --sakura-foreground: 225 10% 23%; /* Darker pink for contrast */
+        --pastel: 350 100% 88%; /* Pastel Pink */
+        --background: 42 38% 75%;
+        --foreground: 225 10% 23%;
+        --card: 42 38% 75%;
+        --card-foreground: 225 10% 23%;
+        --popover: 42 38% 75%;
+        --popover-foreground: 225 10% 23%;
+        --primary: 87 47% 34%;
+        --primary-foreground: 42 38% 75%;
+        --secondary: 90 82% 15%;
+        --secondary-foreground: 42 38% 75%;
+        --muted: 42 38% 85%;
+        --muted-foreground: 225 10% 33%;
+        --accent: 29 49% 14%;
+        --accent-foreground: 42 38% 75%;
+        --destructive: 225 10% 23%;
+        --destructive-foreground: 42 38% 75%;
+        --border: 87 47% 34%;
+        --input: 87 47% 34%;
+        --ring: 90 82% 15%;
+        --radius: 0.5rem;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(
+            to right,
+            rgba(54, 56, 66, 0.1) 1px,
+            transparent 1px
+        ),
+        linear-gradient(to bottom, rgba(54, 56, 66, 0.1) 1px, transparent 1px);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.mask-radial-faded {
+    -webkit-mask-image: radial-gradient(circle, #000, #0000 80%);
+    mask-image: radial-gradient(circle, #000, #0000 80%);
 }
