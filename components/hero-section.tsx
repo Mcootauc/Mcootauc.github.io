@@ -5,6 +5,8 @@ import { Button } from './ui/button';
 import { ArrowRight, Github, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import GithubIcon from './icons/GithubIcon';
+import LinkedinIcon from './icons/LinkedinIcon';
 
 export function HeroSection() {
     return (
@@ -64,7 +66,7 @@ export function HeroSection() {
                                 variant="outline"
                                 className="gap-2 border-secondary text-secondary hover:bg-secondary/10"
                             >
-                                <Github className="w-4 h-4" /> GitHub
+                                <GithubIcon className="h-4 w-4" /> GitHub
                             </Button>
                         </Link>
                         <Link
@@ -76,7 +78,7 @@ export function HeroSection() {
                                 variant="outline"
                                 className="gap-2 border-secondary text-secondary hover:bg-secondary/10"
                             >
-                                <Linkedin className="w-4 h-4" /> LinkedIn
+                                <LinkedinIcon className="w-4 h-4" /> LinkedIn
                             </Button>
                         </Link>
                     </motion.div>
@@ -87,7 +89,7 @@ export function HeroSection() {
                         transition={{ delay: 0.6, duration: 0.5 }}
                         className="mt-12"
                     >
-                        <div className="flex gap-8 items-center justify-center">
+                        {/* <div className="flex gap-8 items-center justify-center">
                             {[
                                 'Java',
                                 'Python',
@@ -109,7 +111,7 @@ export function HeroSection() {
                                     </span>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </motion.div>
                 </motion.div>
             </div>

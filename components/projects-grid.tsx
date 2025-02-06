@@ -74,7 +74,10 @@ export function ProjectsGrid() {
     );
 
     return (
-        <section id="projects" className="py-12 px-4 md:px-6 lg:px-8">
+        <section
+            id="projects"
+            className="relative scroll-mt-12 py-12 px-4 md:px-6 lg:px-8"
+        >
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

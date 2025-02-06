@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
+import Image from 'next/image';
 
 const skills = [
     {
@@ -53,7 +53,10 @@ const skills = [
 
 export function AboutSection() {
     return (
-        <section id="about" className="py-12 px-4 md:px-6 lg:px-8">
+        <section
+            id="about"
+            className="relative scroll-mt-12 py-12 px-4 md:px-6 lg:px-8"
+        >
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -95,7 +98,17 @@ export function AboutSection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
                         className="relative"
-                    ></motion.div>
+                    >
+                        <div className="aspect-square relative overflow-hidden rounded-xl">
+                            <Image
+                                src="/img/profilePic2.jpg"
+                                alt="Mitchell Cootauco"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
+                    </motion.div>
                 </div>
 
                 <motion.div
