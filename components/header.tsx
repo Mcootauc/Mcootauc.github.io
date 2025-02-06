@@ -70,10 +70,7 @@ export default function Header() {
                             <span className="sr-only">LinkedIn</span>
                         </Button>
                     </Link>
-                    <Link
-                        href="/SweInternshipResumeJune2024.pdf"
-                        target="_blank"
-                    >
+                    <Link href="/SweJobResumeFebruary2025.pdf" target="_blank">
                         <Button className="bg-secondary hover:bg-secondary/90">
                             Resume
                         </Button>

@@ -55,7 +55,7 @@ export function ProjectCard({
                     </div>
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
-                    <Link href={link} className="w-full">
+                    <Link href={link} target="_blank" className="w-full">
                         <Button className="w-full gap-2">
                             View Project <ArrowUpRight className="w-4 h-4" />
                         </Button>

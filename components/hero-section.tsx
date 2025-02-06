@@ -64,7 +64,7 @@ export function HeroSection() {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="gap-2 border-secondary text-secondary hover:bg-secondary/10"
+                                className="gap-2 border-secondary text-secondary hover:bg-secondary/60"
                             >
                                 <GithubIcon className="h-4 w-4" /> GitHub
                             </Button>
@@ -76,7 +76,7 @@ export function HeroSection() {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="gap-2 border-secondary text-secondary hover:bg-secondary/10"
+                                className="gap-2 border-secondary text-secondary hover:bg-secondary/60"
                             >
                                 <LinkedinIcon className="w-4 h-4" /> LinkedIn
                             </Button>
