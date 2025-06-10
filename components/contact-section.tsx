@@ -18,48 +18,36 @@ export function ContactSection() {
     const [isLoading, setIsLoading] = useState(false);
     const { toast } = useToast();
 
-    // State for form inputs
-    const [formData, setFormData] = useState({
-        first: '',
-        last: '',
-        email: '',
-        message: '',
-    });
-
-    // Handle input changes
-    function handleInputChange(
-        event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) {
-        setFormData({ ...formData, [event.target.name]: event.target.value });
-    }
-
+    // Handle form submission
     async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         setIsLoading(true);
 
         try {
+            const formData = new FormData(event.currentTarget);
             const response = await fetch('https://formspree.io/f/xwkdlanz', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData), // Send JSON, not FormData
+                body: formData,
+                headers: {
+                    Accept: 'application/json',
+                },
             });
 
             if (response.ok) {
-                // Reset form state
-                setFormData({ first: '', last: '', email: '', message: '' });
+                // Reset form
+                (event.target as HTMLFormElement).reset();
 
                 // Show success toast
                 toast({
                     title: 'Message sent!',
                     description:
                         "Thanks for reaching out. I'll get back to you soon.",
-                    duration: 4000, // Show for 4 seconds
+                    duration: 4000,
                 });
             } else {
                 throw new Error('Failed to send message');
             }
-        } catch (error) {
-            // Show error toast
+        } catch (error: unknown) {
             toast({
                 title: 'Error',
                 description: 'Failed to send message. Please try again.',
@@ -100,16 +88,14 @@ export function ContactSection() {
                                     placeholder="First Name"
                                     required
                                     disabled={isLoading}
-                                    value={formData.first}
-                                    onChange={handleInputChange}
+                                    autoComplete="off"
                                 />
                                 <Input
                                     name="last"
                                     placeholder="Last Name"
                                     required
                                     disabled={isLoading}
-                                    value={formData.last}
-                                    onChange={handleInputChange}
+                                    autoComplete="off"
                                 />
                             </div>
                             <Input
@@ -118,8 +104,7 @@ export function ContactSection() {
                                 placeholder="Email"
                                 required
                                 disabled={isLoading}
-                                value={formData.email}
-                                onChange={handleInputChange}
+                                autoComplete="off"
                             />
                             <Textarea
                                 name="message"
@@ -127,8 +112,7 @@ export function ContactSection() {
                                 required
                                 disabled={isLoading}
                                 className="min-h-[150px]"
-                                value={formData.message}
-                                onChange={handleInputChange}
+                                autoComplete="off"
                             />
                             <Button
                                 type="submit"

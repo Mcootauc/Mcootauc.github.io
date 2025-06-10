@@ -1,6 +1,4 @@
 'use client';
-
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
@@ -60,7 +58,7 @@ export default function Header() {
                     </button>
                     <div className="flex items-center gap-4 pl-4">
                         <Link
-                            href="/SweJobResumeFebruary2025.pdf"
+                            href="/3+Years_Experience_MitchellCootauco.pdf"
                             target="_blank"
                         >
                             <Button className="bg-secondary hover:bg-secondary/90">
