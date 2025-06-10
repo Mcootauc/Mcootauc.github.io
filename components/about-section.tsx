@@ -75,7 +75,7 @@ export function AboutSection() {
                     >
                         <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary/30 shadow-xl transition-transform duration-300 hover:scale-110">
                             <Image
-                                src="./img/ProfilePic2.jpg"
+                                src="./img/profilePic2.jpg"
                                 alt="Mitchell Cootauco"
                                 width={256}
                                 height={256}

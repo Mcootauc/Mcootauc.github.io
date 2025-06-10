@@ -10,7 +10,7 @@ const projects = [
     {
         title: 'OfferOasis',
         description: 'A marketplace web app using Google Firebase and React',
-        image: '/img/offeroasis.png',
+        image: '/img/OfferOasis.png',
         tags: ['React', 'Firebase', 'Full Stack'],
         link: 'https://github.com/Mcootauc/OfferOasis',
     },
