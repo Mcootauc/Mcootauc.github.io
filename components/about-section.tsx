@@ -94,8 +94,8 @@ export function AboutSection() {
                                 to my work in software engineering.
                             </p>
                             <p className="text-lg leading-relaxed text-muted-foreground">
-                                When II&apos;m not immersed in coursework,
-                                youI&apos;ll find me playing volleyball, working
+                                When I&apos;m not immersed in coursework,
+                                you&apos;ll find me playing volleyball, working
                                 on coding projects, hitting the gym, enjoying DC
                                 superhero movies, experimenting with new
                                 recipes, or diving into video games.
