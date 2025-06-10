@@ -7,6 +7,8 @@ import Footer from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import type { ReactNode } from 'react';
+import { ScrollToTopButton } from '@/components/scroll-to-top-button';
+import { ThemeProvider } from '@/components/ui/theme-provider';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const montserrat = Montserrat({
@@ -30,12 +32,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                     montserrat.variable
                 )}
             >
-                <Header />
-                <main className="flex-1">{children}</main>
-                <Footer />
-                <Toaster />
-                <Analytics />
-                <SpeedInsights />
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="dark"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    <Header />
+                    <main className="flex-1">{children}</main>
+                    <Footer />
+                    <Toaster />
+                    <Analytics />
+                    <SpeedInsights />
+                    <ScrollToTopButton />
+                </ThemeProvider>
             </body>
         </html>
     );

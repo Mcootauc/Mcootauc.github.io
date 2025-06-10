@@ -1,14 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { ExperienceImage } from './ui/experience-image';
 
 const experiences = [
     {
         position: 'Director of Engineering',
         company: 'Crimson Consultant Group',
         dates: 'February 2024 - May 2025',
-        logo: '/experience_img/CCG.jpg',
+        logo: '/experience_img/CCG.png',
         responsibilities: [
             'Spearheaded a client project for a multi-billion-dollar short-term rental company by directing product development teams to curate an application programming interface for 23,000 monthly active homeowner stakeholders',
             'Created an improved web application utilizing Vue and Google Firebase to store and display information seamlessly',
@@ -30,7 +30,7 @@ const experiences = [
         position: 'Full Stack Software Engineer',
         company: 'HHQueen',
         dates: 'February 2025 - April 2025',
-        logo: '/experience_img/HHQueen.jpg',
+        logo: '/experience_img/hhqueen.png',
         responsibilities: [
             'Optimized database schema with Prisma, improving data management for user profiles, venues, and menu images',
             'Deployed a Next.js web app using React and TypeScript, facilitating B2B login and auto-fill search for venue access requests',
@@ -52,7 +52,7 @@ const experiences = [
         position: 'Algorithms Teaching Assistant',
         company: 'Loyola Marymount University',
         dates: 'August 2023 - May 2024',
-        logo: '/experience_img/TeachingAssistant.jpg',
+        logo: '/experience_img/SoftwareEngineerResearcher.jpg',
         responsibilities: [
             'Enabled understanding of Python algorithmic concepts for 75 students through 1-1 tutoring, facilitating academic success',
             'Assessed homework projects, providing detailed feedback to students to improve their understanding of algorithmic concepts',
@@ -129,13 +129,10 @@ export function ExperienceSection() {
                             </div>
 
                             <div className="lg:w-1/2 flex justify-center items-center">
-                                <div className="w-[90%] h-[300px] bg-card rounded-lg border border-border flex items-center justify-center p-8">
-                                    <Image
+                                <div className="relative w-[50%] h-[300px] bg-card rounded-lg border border-border overflow-hidden">
+                                    <ExperienceImage
                                         src={exp.logo || '/placeholder.svg'}
                                         alt={`${exp.company} logo`}
-                                        width={500}
-                                        height={300}
-                                        className="max-w-full max-h-full object-contain opacity-80"
                                     />
                                 </div>
                             </div>
