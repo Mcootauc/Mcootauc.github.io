@@ -10,21 +10,21 @@ const projects = [
     {
         title: 'OfferOasis',
         description: 'A marketplace web app using Google Firebase and React',
-        image: './img/offeroasis.png',
+        image: '/img/offeroasis.png',
         tags: ['React', 'Firebase', 'Full Stack'],
         link: 'https://github.com/Mcootauc/OfferOasis',
     },
     {
         title: 'Live Sign Language Recognition',
         description: 'Real-time ASL recognition using MediaPipe and Python',
-        image: './img/ASL-Screenshot.png',
+        image: '/img/ASL-Screenshot.png',
         tags: ['Python', 'Machine Learning', 'Computer Vision'],
         link: 'https://github.com/Mcootauc/Live-Sign-Language-Recognition',
     },
     {
         title: 'Blendify',
         description: 'Music recommendation app using Spotify API',
-        image: './img/BlendifyLogin.png',
+        image: '/img/BlendifyLogin.png',
         tags: ['React', 'API', 'Full Stack'],
         link: 'https://github.com/Mcootauc/Blendify',
     },
@@ -32,7 +32,7 @@ const projects = [
         title: 'WoodyClick',
         description:
             'A web application that incentivises people to donate to plant trees and is inspired by the game Cookie Clicker',
-        image: './img/WoodyClick.png',
+        image: '/img/WoodyClick.png',
         tags: ['React', 'Python', 'Google Firebase'],
         link: 'https://github.com/Mcootauc/Woody-Click',
     },
@@ -40,7 +40,7 @@ const projects = [
         title: 'SussyScript',
         description:
             'SussyScript is a static and weakly typed coding language inspired by the popular party game Among Us!',
-        image: './img/SussyScriptLogo.png',
+        image: '/img/SussyScriptLogo.png',
         tags: ['JavaScript', 'Ohm'],
         link: 'https://github.com/Mcootauc/SussyScript',
     },
@@ -48,7 +48,7 @@ const projects = [
         title: 'BabelBeauty',
         description:
             "A handy iOS app that's like a beauty blog for cosmetics enthusiasts.",
-        image: './img/BabelBeautyLogo.png',
+        image: '/img/BabelBeautyLogo.png',
         tags: ['Swift', 'Google Firebase'],
         link: 'https://github.com/Mcootauc/Babel-Beauty',
     },
