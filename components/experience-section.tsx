@@ -5,15 +5,15 @@ import { ExperienceImage } from './ui/experience-image';
 
 const experiences = [
     {
-        position: 'Director of Engineering',
+        position: 'Project Lead',
         company: 'Crimson Consultant Group',
         dates: 'February 2024 - May 2025',
         logo: '/experience_img/CCG.png',
         location: 'Los Angeles, CA',
         responsibilities: [
-            'Spearheaded a client project for a <strong>multi-billion-dollar</strong> short-term rental company by directing product development teams to curate an application programming interface for <strong>23,000</strong> monthly active homeowner stakeholders',
-            'Created an improved web application utilizing <strong>Vue</strong> and <strong>Google Firebase</strong> to store and display information seamlessly',
-            'Managed a GitHub repository for a <strong>10</strong>-member <strong>Agile</strong> team, overseeing commits and approving merge/pull requests',
+            'Spearheaded a client project for a multi-billion-dollar short-term rental company by directing product development teams to curate a front-end interface for 23,000 monthly active homeowner stakeholders',
+            'Created an improved version of the client’s web app using Vue and Firebase to store and display information',
+            'Managed a GitHub repository for a 10-member Agile team, overseeing commits and approving pull requests',
         ],
     },
     {
@@ -23,9 +23,9 @@ const experiences = [
         logo: '/experience_img/NFA.png',
         location: 'Remote (New York, NY)',
         responsibilities: [
-            'Established CRUD operations using <strong>Python</strong>, <strong>FastAPI</strong>, and <strong>SQL</strong>, optimizing data management and backend performance',
-            'Enhanced the user dashboard utilizing <strong>React</strong>, <strong>Next.js</strong>, and <strong>TypeScript</strong>, ensuring a dynamic and responsive user interface',
-            'Containerized <strong>15 FastAPI</strong> endpoints with <strong>Docker</strong> and deployed via <strong>AWS SAM</strong> to <strong>AWS Lambda</strong>, cutting release time by <strong>88%</strong>',
+            'Launched CRUD operations and social OAuth routes using TypeScript, Python, and SQL, optimizing data management and account security',
+            'Enhanced the user dashboard utilizing Next.js and TypeScript, ensuring a dynamic and responsive user interface',
+            'Containerized 15 FastAPI endpoints with Docker and deployed via AWS Lambda, cutting release time by 88%',
         ],
     },
     {
@@ -35,9 +35,9 @@ const experiences = [
         logo: '/experience_img/hhqueen.png',
         location: 'Remote (Los Angeles, CA)',
         responsibilities: [
-            'Optimized database schema with <strong>Prisma</strong>, improving data management for user profiles, venues, and menu images',
-            'Deployed a <strong>Next.js</strong> web app using <strong>React</strong> and <strong>TypeScript</strong>, facilitating B2B login and auto-fill search for venue access requests',
-            'Designed API functions, including a business-owner notification system, ensuring the archiving of outdated venues',
+            'Optimized database schema with Prisma, improving data management for user profiles, venues, and images',
+            'Deployed a Next.js large-scale web app using React and TypeScript, enabling auto-fill search for venue requests',
+            'Designed API functions, including a business-owner warning system, ensuring the archiving of outdated venues',
         ],
     },
     {
@@ -47,9 +47,9 @@ const experiences = [
         logo: '/experience_img/ValleyVetPlaceholder.png',
         location: 'Los Angeles, CA',
         responsibilities: [
-            'Developed an automated client registration system using <strong>React Native Expo</strong> and <strong>Supabase</strong> that reduced new client entry time by <strong>10%</strong> and removed data-entry errors, allowing veterinary technicians to spend more time assisting clients and pets',
-            'Integrated a Chrome extension to auto-populate new client information into veterinary management software, which streamlined workflow and minimized manual data handling, increasing the number of new clients every month',
-            'Deployed a <strong>Next.js</strong> web app displaying real-time client data, enabling vet technicians to view and copy registrations',
+            'Developed an automated client registration system using React Native Expo and Supabase that reduced new client entry time by 20% and removed data-entry errors, allowing vet techs more time to help clients and pets',
+            'Integrated a Chrome extension to auto-populate new client information into vet management software, which simplified workflow and minimized manual data handling, raising the number of new clients by 5% every month',
+            'Deployed a Next.js web app displaying client data, enabling vet technicians to view and copy registrations',
         ],
     },
     {
@@ -71,8 +71,8 @@ const experiences = [
         logo: '/experience_img/SoftwareEngineerResearcher.jpg',
         location: 'Los Angeles, CA',
         responsibilities: [
-            'Designed a web app using <strong>React</strong> and the eBird API, improving online experience and access to avian knowledge',
-            'Resolved API connectivity issues by rectifying the API key discrepancy, ensuring uninterrupted data flow and functionality',
+            'Designed a web app using React and the eBird API, improving online experience and access to avian knowledge',
+            'Resolved API connectivity issues by rectifying the API key discrepancy, ensuring data flow and functionality',
             'Composed a responsive layout that adapts to various devices, enhancing accessibility and user engagement',
         ],
     },
