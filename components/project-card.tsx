@@ -60,6 +60,11 @@ export function ProjectCard({
                             View Project <ArrowUpRight className="w-4 h-4" />
                         </Button>
                     </Link>
+                    {/* <Dialog>
+                        <DialogTrigger>
+                            <Button>View Project</Button>
+                        </DialogTrigger>
+                    </Dialog> */}
                 </CardFooter>
             </Card>
         </motion.div>
