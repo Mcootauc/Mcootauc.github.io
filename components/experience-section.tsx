@@ -102,7 +102,7 @@ export function ExperienceSection() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
-                            className="flex flex-col lg:flex-row items-start gap-4"
+                            className="flex flex-col lg:flex-row items-start gap-4 px-2"
                         >
                             <div className="flex-1 lg:w-1/2">
                                 <h3 className="text-2xl lg:text-3xl font-bold mb-2">
@@ -141,8 +141,8 @@ export function ExperienceSection() {
                                 </ul>
                             </div>
 
-                            <div className="lg:w-1/2 flex justify-center items-center">
-                                <div className="relative w-[50%] h-[300px] bg-card rounded-lg border border-border overflow-hidden">
+                            <div className="w-full md:w-1/2 flex justify-center items-center">
+                                <div className="w-full md:w-[330px] h-[330px] bg-card rounded-lg border border-border overflow-hidden">
                                     <ExperienceImage
                                         src={exp.logo || '/placeholder.svg'}
                                         alt={`${exp.company} logo`}

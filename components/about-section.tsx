@@ -73,7 +73,7 @@ export function AboutSection() {
                         transition={{ delay: 0.2 }}
                         className="flex flex-col items-center gap-8"
                     >
-                        <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary/30 shadow-xl transition-transform duration-300 hover:scale-110">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-primary/30 shadow-xl transition-transform duration-300 hover:scale-110">
                             <Image
                                 src="/img/ProfilePic2.jpg"
                                 alt="Mitchell Cootauco"

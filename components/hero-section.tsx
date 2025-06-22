@@ -20,7 +20,7 @@ export function HeroSection() {
         <div className="h-[calc(100vh-4rem)] flex flex-col items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 w-full h-full bg-grid bg-center pointer-events-none" />
             <div className="absolute inset-0 flex items-center justify-center bg-background/50 mask-radial-faded" />
-            <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl relative">
+            <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl relative">
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -44,7 +44,7 @@ export function HeroSection() {
                     transition={{ duration: 0.7, delay: 0.3 }}
                     className="text-center lg:text-center"
                 >
-                    <h1 className="text-4xl lg:text-6xl font-bold mb-4 leading-tight">
+                    <h1 className="text-3xl lg:text-6xl font-bold mb-4 leading-tight">
                         Hi! I&apos;m{' '}
                         <span className="text-primary">Mitchell Cootauco</span>
                     </h1>
@@ -53,14 +53,13 @@ export function HeroSection() {
                             <span className="font-bold">
                                 Full Stack Software Engineer{' '}
                             </span>
-                            based in Los Angeles
+                            based in San Marino, CA
                         </p>
 
                         <div className="flex flex-wrap gap-4 justify-center">
                             <Button
                                 onClick={() => scrollToSection('projects')}
-                                size="lg"
-                                className="gap-2 bg-secondary hover:bg-secondary/90"
+                                className="gap-1 sm:gap-2 bg-secondary hover:bg-secondary/90 h-9 sm:h-11"
                             >
                                 View Projects <ArrowRight className="w-4 h-4" />
                             </Button>
@@ -69,9 +68,8 @@ export function HeroSection() {
                                 target="_blank"
                             >
                                 <Button
-                                    size="lg"
                                     variant="outline"
-                                    className="gap-2 border-secondary text-secondary hover:bg-secondary/60"
+                                    className="gap-1 sm:gap-2 border-secondary text-secondary hover:bg-secondary/60 h-9 sm:h-11"
                                 >
                                     <GithubIcon className="h-4 w-4" /> GitHub
                                 </Button>
@@ -81,9 +79,9 @@ export function HeroSection() {
                                 target="_blank"
                             >
                                 <Button
-                                    size="lg"
+                                    size="default"
                                     variant="outline"
-                                    className="gap-2 border-secondary text-secondary hover:bg-secondary/60"
+                                    className="gap-1 sm:gap-2 border-secondary text-secondary hover:bg-secondary/60 h-9 sm:h-11"
                                 >
                                     <LinkedinIcon className="w-4 h-4" />{' '}
                                     LinkedIn
