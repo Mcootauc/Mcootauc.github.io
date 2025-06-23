@@ -31,7 +31,7 @@ export default function Header() {
                     />
                 </button>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                     <button
                         onClick={() => scrollToSection('about')}
                         className={`text-xs sm:text-sm font-medium transition-colors text-primary hover:text-secondary`}
@@ -58,7 +58,7 @@ export default function Header() {
                     </button>
                     <div className="flex items-center gap-4 sm:pl-4">
                         <Link
-                            href="/3+Years_Experience_MitchellCootauco.pdf"
+                            href="/Mitchell_Cootauco_3+_Years_Experience.pdf"
                             target="_blank"
                         >
                             <Button className="bg-secondary hover:bg-secondary/90 text-xs sm:text-sm">
