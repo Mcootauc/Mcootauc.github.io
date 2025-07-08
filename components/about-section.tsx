@@ -85,20 +85,34 @@ export function AboutSection() {
 
                         <div className="space-y-6">
                             <p className="text-lg leading-relaxed text-muted-foreground">
-                                I&apos;m a 23-year-old recent Computer Science
-                                grad at Loyola Marymount University
+                                I&apos;m Mitchell Cootauco, a full-stack
+                                software engineer from San Marino, California
+                                with <strong>B.S.</strong> and{' '}
+                                <strong>M.S.</strong> degrees in{' '}
+                                <strong>Computer Science</strong> from Loyola
+                                Marymount University.
                             </p>
                             <p className="text-lg leading-relaxed text-muted-foreground">
-                                Born and raised in San Marino, California, I
-                                bring a diverse set of interests and experiences
-                                to my work in software engineering.
+                                I have led product teams for a
+                                multi-billion-dollar rental platform at Crimson
+                                Consultant Group, secured cloud releases at
+                                NextFoundArtist by containerizing FastAPI
+                                services on AWS Lambda, and shipped data-heavy
+                                web and mobile apps for HHQueen and Valley
+                                Veterinary Hospital, while also teaching
+                                algorithms to 75 students and contributing to
+                                open-source research projects. Whether refining
+                                a database schema, writing TypeScript for a
+                                responsive interface, or guiding a 10-member
+                                Agile squad through a sprint, I focus on
+                                measurable results and clean, maintainable code.
                             </p>
                             <p className="text-lg leading-relaxed text-muted-foreground">
-                                When I&apos;m not immersed in coursework,
-                                you&apos;ll find me playing volleyball, working
-                                on coding projects, hitting the gym, enjoying DC
-                                superhero movies, experimenting with new
-                                recipes, or diving into video games.
+                                Outside of work you will find me spiking
+                                volleyballs, lifting at the gym, experimenting
+                                in the kitchen, watching superhero movies, or
+                                gaming, and I bring the same disciplined energy
+                                to every commit and collaboration.
                             </p>
                         </div>
                     </motion.div>
