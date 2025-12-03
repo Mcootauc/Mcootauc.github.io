@@ -5,6 +5,17 @@ import { ExperienceImage } from './ui/experience-image';
 
 const experiences = [
     {
+        position: 'Founding Full Stack Engineer',
+        company: 'Aware',
+        dates: 'August 2025 - Present',
+        logo: '/experience_img/Aware.jpg',
+        location: 'Remote (Burbank, CA)',
+        responsibilities: [
+            'Developed the main feed and article pages in <strong>Next.js</strong>/<strong>React</strong> by building <strong>5</strong> Supabase edge functions and <strong>20+ TypeScript</strong> components that implement scroll-snap, progress bar, and responsive <strong>CSS</strong> across mobile and desktop',
+            'Optimized query performance, LCP, and SEO by adding lazy-loaded, paginated main-feed rendering (<strong>20</strong> documents per page) and implementing AVIF/WebP image optimization, improving overall performance by <strong>17%</strong>',
+        ],
+    },
+    {
         position: 'Project Lead',
         company: 'Crimson Consultant Group',
         dates: 'February 2024 - May 2025',
