@@ -58,7 +58,7 @@ export default function Header() {
                     </button>
                     <div className="flex items-center gap-4 sm:pl-4">
                         <Link
-                            href="/Nov2025_MitchellCootauco.pdf"
+                            href="/Resume_MitchellCootauco.pdf"
                             target="_blank"
                         >
                             <Button className="bg-secondary hover:bg-secondary/90 text-xs sm:text-sm">
